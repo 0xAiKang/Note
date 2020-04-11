@@ -47,6 +47,9 @@ showfiles | 显示隐藏文件
 hidefiles | 隐藏隐藏的文件
 rmdsstore | 以递归方式删除目录中的.DS_Store文件
 
+## tmux
+`tmux` 是一个终端下窗口分割的工具，有关它的具体介绍，请查阅[这篇笔记](https://github.com/0xAiKang/Note/blob/master/Skill/Tmux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)。
+
 ### 参考链接
 * [安装 zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [如何启用 zsh 的插件](https://github.com/ohmyzsh/ohmyzsh#enabling-plugins)
