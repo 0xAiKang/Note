@@ -70,9 +70,40 @@ jc bar | 跳转到包含 bar 的子目录
 jo file | 在访达中打开包含 file 的目录
 autojump --help | 打开帮助列表
 
+## Spaceship ZSH
+Spaceship ZSH - 是一个极简、强大和可定制的`ZSH`提示符。
+
+我是在无意间发现的这个终端工具的，先来看一下实际效果。
+
+![image](https://user-images.githubusercontent.com/10276208/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif)
+
+### 特点
+Spaceship ZSH 有很多很棒的特点，这里仅仅列举一些我所看见的。
+
+* 颜值即正义
+* 展示当前Git 仓库的状态
+* 展示各种语言的当前版本
+* 展示最后一条命令的总执行时间
+
+### 安装
+Spaceship ZSH 的安装方式有多种，这里仅介绍通过`oh-my-zsh`的安装方式，其他方式可参考[官网](https://denysdovhan.com/spaceship-prompt/)。
+
+1. 克隆仓库
+```
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+```
+2. 将`spaceship.zsh-theme` 链接到`oh-my-zsh` 的主题目录
+```
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
+3. 编辑`~/.zshrc`
+```
+ZSH_THEME="spaceship"
+```
 
 ### 参考链接
 * [安装 zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [如何启用 zsh 的插件](https://github.com/ohmyzsh/ohmyzsh#enabling-plugins)
 * [OSX 插件](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/osx)
 * [autojump](https://github.com/wting/autojump)
+* [Spaceship ZSH](https://github.com/denysdovhan/spaceship-prompt#installing)
