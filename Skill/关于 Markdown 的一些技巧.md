@@ -24,6 +24,14 @@ Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯。它允
 ### 可视化差异
 可以使用反引号可视化差异，并`diff`根据需要突出显示红色或绿色的线。
 
+```
+​```diff
+10 PRINT “BASIC IS COOL”
+- 20 GOTO 11
++ 20 GOTO 10
+​```
+```
+
 ```diff
 10 PRINT “BASIC IS COOL”
 - 20 GOTO 11
@@ -58,7 +66,7 @@ Unpacking objects: 100% (67/67), done.
 </details>
 
 ### 使图像文字居中
-HTML 中的`<div align="center">` 居然可以神奇的应用在 Markdown 中，然所有内容居中。
+HTML 中的`<div align="center">` 居然可以神奇的应用在 Markdown 中，让所有内容居中。
 
 ```
 <div align="center">
