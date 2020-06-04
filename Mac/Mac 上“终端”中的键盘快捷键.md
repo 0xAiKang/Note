@@ -36,5 +36,15 @@
 ⌃ + W
 ```
 
+向前移动至上一次空格处
+```
+⎋ + B
+```
+
+向后移动至下一个空格处
+```
+⎋ + F
+```
+
 ### 参考链接
 [* Mac 上”终端“快捷键](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)

@@ -87,6 +87,13 @@ $ expr 1 + 3
 4 
 ```
 
+重命名文件
+```
+$ mv fileA.txt fileB.txt
+$ ls
+fileB.txt
+```
+
 ### 参考链接
 * [鲜为人知而又实用的 Linux 命令](https://blog.csdn.net/zhu_xun/article/details/17018799)
 
