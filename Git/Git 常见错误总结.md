@@ -53,5 +53,22 @@ $ sudo vim /etc/hosts
 ```
 不一定需要重启电脑，但我是通过重启电脑，这个问题才得到解决。
 
+## fatal: refusing to merge unrelated histories
+
+完整错误信息如下：
+```
+$ git pull origin master
+From gitlab.com:options/bustabit
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+```
+
+这个异常信息其实已经非常明确了，解决办法也很简单。
+
+```
+$ git pull origin master --allow-unrelated-histories
+```
+在基础命令之上，添加一个 `--allow-unrelated-histories` 参数，但是需要注意的是，git 出于安全考虑，才没有拒绝了合并，如果执意要合并的话，需要做好解决合并冲突的准备。
+
 ### 参考链接
 * [Git使用过程遇到问题及解决方案](https://xiaogliu.github.io/2017/02/12/gather-git-question/)
