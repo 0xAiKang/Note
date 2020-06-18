@@ -94,6 +94,47 @@ $ ls
 fileB.txt
 ```
 
+nohup 是一个 `POSIX` 命令，用于忽略 `SIGHUP` 。 SIGHUP信号是終端注销时所发送至程序的一个信号。
+
+```
+nohub php script.php
+```
+
+type 命令用来显示指定命令的类型，判断给出的指令是内部指令还是外部指令。
+```
+type -a php
+php is /usr/local/bin/php
+php is /usr/bin/php
+```
+命令类型：
+* alias：别名。
+* keyword：关键字，Shell保留字。
+* function：函数，Shell函数。
+* builtin：内建命令，Shell内建命令。
+* file：文件，磁盘文件，外部命令。
+* unfound：没有找到。
+
+查找进程
+
+```
+ps -aux | grep php
+```
+注意：每个操作系统的ps版本略有不同，Ubuntu 和Mac 上可以直接使用`-aux`参数，但可能其他系统不能加破折号。
+参考链接：[Linux ps command help and example](https://www.computerhope.com/unix/ups.htm)
+
+杀死进程
+
+1. 根据 `pid`（会杀死指定pid 的进程）
+
+```
+kill -9 [pid]
+```
+2. 根据进程名称（会杀死一组同名进程）
+
+```
+killall php
+```
+
 ### 参考链接
 * [鲜为人知而又实用的 Linux 命令](https://blog.csdn.net/zhu_xun/article/details/17018799)
 
