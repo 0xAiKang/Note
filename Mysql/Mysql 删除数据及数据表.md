@@ -53,6 +53,18 @@ WHERE table_schema = 'database_name' AND table_name LIKE 'wp_%';
 ```
 其中`database_name`换成数据库的名称，`wp_`换成需要批量删除的表前缀。
 
+> 注意只有`drop`命令才能这样用：
+
+```
+drop table if exists tablename`;
+```
+
+> `truncate`只能这样使用：
+
+```
+truncate table `tp_trade`.`setids`;
+```
+
 ### 总结
 - 当你不再需要该表时， 用`drop`;
 
