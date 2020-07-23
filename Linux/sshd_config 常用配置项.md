@@ -9,7 +9,6 @@
 
 设置为0（默认值）将禁用这些功能，因此如果空闲时间太长，连接可能会断开。
 
-
 ```
 Host myhostshortcut
      HostName myhost.com
